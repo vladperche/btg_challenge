@@ -1,0 +1,67 @@
+[
+  {
+    "category": "EXECUTIVE",
+    "priority": 1,
+    "multiplier": 2,
+    "keywords": [
+      "CEO",
+      "CFO",
+      "CTO",
+      "COO",
+      "CIO",
+      "CMO",
+      "Chief",
+      "President",
+      "Vice President",
+      "VP",
+      "Director"
+    ]
+  },
+  {
+    "category": "SENIOR_PROFESSIONAL",
+    "priority": 2,
+    "multiplier": 1.5,
+    "keywords": [
+      "Senior",
+      "Lead",
+      "Manager",
+      "Coordinator",
+      "Supervisor",
+      "Principal"
+    ]
+  },
+  {
+    "category": "MID_PROFESSIONAL",
+    "priority": 3,
+    "multiplier": 1,
+    "keywords": [
+      "Engineer",
+      "Analyst",
+      "Developer",
+      "Specialist",
+      "Designer",
+      "Accountant",
+      "Consultant",
+      "Architect"
+    ]
+  },
+  {
+    "category": "JUNIOR_PROFESSIONAL",
+    "priority": 4,
+    "multiplier": 0.7,
+    "keywords": [
+      "Junior",
+      "Trainee",
+      "Intern",
+      "Apprentice",
+      "Assistant",
+      "Associate"
+    ]
+  },
+  {
+    "category": "OTHER",
+    "priority": 5,
+    "multiplier": 0.8,
+    "keywords": []
+  }
+]

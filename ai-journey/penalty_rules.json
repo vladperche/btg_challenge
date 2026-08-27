@@ -1,0 +1,11 @@
+[
+  {
+    "rule_id": "DEFAULT_DEBT_PENALTY",
+    "priority": 1,
+    "effect": 0.5,
+    "trigger": [
+      "credit_default",
+      "loan_default"
+    ]
+  }
+]

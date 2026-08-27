@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # Container #2: REDIS for Cache-Aside
+  redis:
+    image: redis:7-alpine
+    container_name: btg_redis
+    restart: always
+    command: redis-server --requirepass MySecureRedisPassword123!
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./dockerdata/redis:/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "MySecureRedisPassword123!", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # Container #3: MongoDB for Data Persistence
+  mongodb:
+    image: mongo:7.0
+    container_name: btg_mongodb
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: MySecureMongoPassword123!
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./dockerdata/mongodb:/data/db
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mongosh", "-u", "root", "-p", "MySecureMongoPassword123!", "--authenticationDatabase", "admin", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # Container #1: Presentation Layer (.NET Core C# Web API)
+  presentation-api:
+    image: btg-presentation-api:latest
+    build:
+      context: .
+      dockerfile: src/API/Dockerfile
+    container_name: btg_presentation_api
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__MongoDB=mongodb://root:MySecureMongoPassword123!@mongodb:27017/btg_prototyping_db?authSource=admin
+      - ConnectionStrings__Redis=redis:6379,password=MySecureRedisPassword123!
+      - Security__ApiKey=BTG_PROTOTYPING_SECRET_KEY_12345
+    volumes:
+      - ./dockerdata/api:/app/logs
+    depends_on:
+      redis:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

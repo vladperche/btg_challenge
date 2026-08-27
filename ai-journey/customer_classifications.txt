@@ -1,0 +1,179 @@
+
+###
+
+Request:
+{
+  "name": "Elon Musk",
+  "age": 55,
+  "score": 1000,
+  "has_market_debt": false,
+  "market_debt_types": [],
+  "location": {
+    "city": "São Paulo",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "President"
+}
+
+Result:
+{
+  "id": "d3e2aad4-e9d8-4f40-b6e3-1de70bf9e2eb",
+  "name": "Elon Musk",
+  "age": 55,
+  "score": 1000,
+  "has_market_debt": false,
+  "market_debt_types": [],
+  "location": {
+    "city": "São Paulo",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "President",
+  "job_category": "EXECUTIVE",
+  "job_multiplier": 2,
+  "customer_cluster": "CLUSTER_A",
+  "cluster_name": "Diamond",
+  "base_limit": 50000,
+  "cap_limit": 100000,
+  "monthly_income": 30000,
+  "penalty_factor": 1,
+  "approved_limit": 100000
+}
+
+###
+
+Request:
+{
+  "name": "Vladimir Perche Cruz",
+  "age": 49,
+  "score": 800,
+  "has_market_debt": false,
+  "market_debt_types": [],
+  "location": {
+    "city": "Osasco",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "Software Engineer"
+}
+
+Response:
+{
+  "id": "543bc974-9eab-4926-b1c9-b70f08563cc0",
+  "name": "Vladimir Perche Cruz",
+  "age": 49,
+  "score": 800,
+  "has_market_debt": false,
+  "market_debt_types": [],
+  "location": {
+    "city": "Osasco",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "Software Engineer",
+  "job_category": "MID_PROFESSIONAL",
+  "job_multiplier": 1,
+  "customer_cluster": "CLUSTER_A",
+  "cluster_name": "Diamond",
+  "base_limit": 50000,
+  "cap_limit": 100000,
+  "monthly_income": 12000,
+  "penalty_factor": 1,
+  "approved_limit": 50000
+}
+
+###
+
+Request:
+{
+  "name": "José Rodrigues",
+  "age": 59,
+  "score": 900,
+  "has_market_debt": true,
+  "market_debt_types": [
+    "credit_card"
+  ],
+  "location": {
+    "city": "São Carlos",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "IT Manager"
+}
+
+Response:
+{
+  "id": "37a2372e-f05b-4086-8b9d-9eb949efb508",
+  "name": "José Rodrigues",
+  "age": 59,
+  "score": 900,
+  "has_market_debt": true,
+  "market_debt_types": [
+    "credit_card"
+  ],
+  "location": {
+    "city": "São Carlos",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "IT Manager",
+  "job_category": "SENIOR_PROFESSIONAL",
+  "job_multiplier": 1.5,
+  "customer_cluster": "CLUSTER_B",
+  "cluster_name": "Gold",
+  "base_limit": 20000,
+  "cap_limit": 40000,
+  "monthly_income": 15000,
+  "penalty_factor": 1,
+  "approved_limit": 30000
+}
+
+###
+
+Request:
+{
+  "name": "Antônio dos Santos",
+  "age": 34,
+  "score": 100,
+  "has_market_debt": true,
+  "market_debt_types": [
+    "credit_card",
+    "loan_default"
+  ],
+  "location": {
+    "city": "São Carlos",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "Bricklayer"
+}
+
+Result:
+{
+  "id": "b03dfd1f-f338-492d-974e-8dd2dfac5d6e",
+  "name": "Antônio dos Santos",
+  "age": 34,
+  "score": 100,
+  "has_market_debt": true,
+  "market_debt_types": [
+    "credit_card",
+    "loan_default"
+  ],
+  "location": {
+    "city": "São Carlos",
+    "state": "SP",
+    "region": "sudeste"
+  },
+  "job_title": "Bricklayer",
+  "job_category": "OTHER",
+  "job_multiplier": 0.8,
+  "customer_cluster": "CLUSTER_D",
+  "cluster_name": "Bronze",
+  "base_limit": 0,
+  "cap_limit": 0,
+  "monthly_income": 0,
+  "penalty_factor": 0.5,
+  "approved_limit": 0
+}
+

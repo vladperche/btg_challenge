@@ -1,0 +1,22 @@
+[
+  {
+    "value": "credit_card",
+    "meaning": " Active credit card (non-defaulted)"
+  },
+  {
+    "value": "personal_loan",
+    "meaning": "Active personal loan (non-defaulted)"
+  },
+  {
+    "value": "mortgage",
+    "meaning": "Mortgage (non-defaulted)"
+  },
+  {
+    "value": "credit_default",
+    "meaning": "Credit card in collections"
+  },
+  {
+    "value": "loan_default",
+    "meaning": "Loan in collections"
+  }
+]

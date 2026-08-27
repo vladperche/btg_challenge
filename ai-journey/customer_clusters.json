@@ -1,0 +1,53 @@
+[
+  {
+    "cluster_id": "CLUSTER_A",
+    "priority": 1,
+    "name": "Diamond",
+    "score": 700,
+    "age_min": 25,
+    "age_max": 60,
+    "base_limit": 50000,
+    "cap_limit": 100000,
+    "debt_condition_market_debt_check": true,
+    "debt_condition_market_types": []
+  },
+  {
+    "cluster_id": "CLUSTER_B",
+    "priority": 2,
+    "name": "Gold",
+    "score": 500,
+    "age_min": 18,
+    "age_max": 65,
+    "base_limit": 20000,
+    "cap_limit": 40000,
+    "debt_condition_market_debt_check": false,
+    "debt_condition_market_types": [
+      "credit_default",
+      "loan_default"
+    ]
+  },
+  {
+    "cluster_id": "CLUSTER_C",
+    "priority": 3,
+    "name": "Silver",
+    "score": 300,
+    "age_min": 0,
+    "age_max": 999,
+    "base_limit": 5000,
+    "cap_limit": 10000,
+    "debt_condition_market_debt_check": false,
+    "debt_condition_market_types": []
+  },
+  {
+    "cluster_id": "CLUSTER_D",
+    "priority": 4,
+    "name": "Bronze",
+    "score": 0,
+    "age_min": 0,
+    "age_max": 999,
+    "base_limit": 0,
+    "cap_limit": 0,
+    "debt_condition_market_debt_check": false,
+    "debt_condition_market_types": []
+  }
+]

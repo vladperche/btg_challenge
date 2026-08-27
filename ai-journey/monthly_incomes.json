@@ -1,0 +1,102 @@
+[
+  {
+    "category": "EXECUTIVE",
+    "cluster_id": "CLUSTER_A",
+    "income": 30000
+  },
+  {
+    "category": "EXECUTIVE",
+    "cluster_id": "CLUSTER_B",
+    "income": 20000
+  },
+  {
+    "category": "EXECUTIVE",
+    "cluster_id": "CLUSTER_C",
+    "income": 10000
+  },
+  {
+    "category": "EXECUTIVE",
+    "cluster_id": "CLUSTER_D",
+    "income": 0
+  },
+  {
+    "category": "SENIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_A",
+    "income": 20000
+  },
+  {
+    "category": "SENIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_B",
+    "income": 15000
+  },
+  {
+    "category": "SENIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_C",
+    "income": 7000
+  },
+  {
+    "category": "SENIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_D",
+    "income": 0
+  },
+  {
+    "category": "MID_PROFESSIONAL",
+    "cluster_id": "CLUSTER_A",
+    "income": 12000
+  },
+  {
+    "category": "MID_PROFESSIONAL",
+    "cluster_id": "CLUSTER_B",
+    "income": 8000
+  },
+  {
+    "category": "MID_PROFESSIONAL",
+    "cluster_id": "CLUSTER_C",
+    "income": 5000
+  },
+  {
+    "category": "MID_PROFESSIONAL",
+    "cluster_id": "CLUSTER_D",
+    "income": 0
+  },
+  {
+    "category": "JUNIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_A",
+    "income": 8000
+  },
+  {
+    "category": "JUNIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_B",
+    "income": 5000
+  },
+  {
+    "category": "JUNIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_C",
+    "income": 3000
+  },
+  {
+    "category": "JUNIOR_PROFESSIONAL",
+    "cluster_id": "CLUSTER_D",
+    "income": 0
+  },
+  {
+    "category": "OTHER",
+    "cluster_id": "CLUSTER_A",
+    "income": 10000
+  },
+  {
+    "category": "OTHER",
+    "cluster_id": "CLUSTER_B",
+    "income": 6500
+  },
+  {
+    "category": "OTHER",
+    "cluster_id": "CLUSTER_C",
+    "income": 4000
+  },
+  {
+    "category": "OTHER",
+    "cluster_id": "CLUSTER_D",
+    "income": 0
+  }
+]
